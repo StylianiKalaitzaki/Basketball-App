@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsActivity">
+
+
+    <ImageView
+        android:id="@+id/teamEmblem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="4dp"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teamEmblem"
+        android:layout_marginTop="30dp"
+        android:background="@color/grey"
+        app:tabIndicatorColor="@color/selection_grey"
+        app:tabIndicatorHeight="@android:dimen/thumbnail_height"
+        app:tabSelectedTextColor="@color/text_selection"
+        app:tabTextColor="@color/white">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_below="@id/tabs"
+        android:layout_marginTop="50dp"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamStats">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/Columns"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/Values"
+                app:layout_constraintEnd_toStartOf="@+id/Values"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Values"
+                app:layout_constraintVertical_bias="0.348">
+
+                <TextView
+                    android:id="@+id/tagTotalGames"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Total Games"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="153dp" />
+
+                <TextView
+                    android:id="@+id/tagWins"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Wins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="153dp" />
+
+                <TextView
+                    android:id="@+id/tagDefeats"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Defeats"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="153dp" />
+
+                <TextView
+                    android:id="@+id/tagShots"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Shots"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="153dp" />
+
+                <TextView
+                    android:id="@+id/tag1P"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="1P"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="173dp" />
+
+                <TextView
+                    android:id="@+id/tag2P"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="2P"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="192dp" />
+
+                <TextView
+                    android:id="@+id/tag3P"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="3P"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="211dp" />
+
+                <TextView
+                    android:id="@+id/tagRebounds"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Rebounds"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="231dp" />
+
+                <TextView
+                    android:id="@+id/tagAssists"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Assists"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="250dp" />
+
+                <TextView
+                    android:id="@+id/tagSteals"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Steals"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="270dp" />
+
+                <TextView
+                    android:id="@+id/tagBlocks"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Blocks"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="289dp" />
+
+                <TextView
+                    android:id="@+id/tagFouls"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Fouls"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="309dp" />
+
+                <TextView
+                    android:id="@+id/tagTurnovers"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Turnovers"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="328dp" />
+
+                <TextView
+                    android:id="@+id/tagPoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Total Points"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="74dp"
+                    tools:layout_editor_absoluteX="112dp"
+                    tools:layout_editor_absoluteY="347dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Values"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/Columns"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/gamesTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/winsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/defeatsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ShotsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1P"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2P"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3P"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ReboundsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/AssistsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/StealsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/BlocksTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/FoulsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TurnoversTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/PointsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/grey"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

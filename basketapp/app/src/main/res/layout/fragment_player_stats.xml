@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="horizontal">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:stretchColumns="*"
+            tools:context=".PlayerStats">
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="150dp"
+                    android:gravity="center"
+                    android:text="Player"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:text="Position"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Points"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="1p"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="2p"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="3p"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Fouls"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Assists"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Blocks"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Shots"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Rebounds"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Steals"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:width="100dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Turnovers"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableLayout>
+    </HorizontalScrollView>
+</LinearLayout>

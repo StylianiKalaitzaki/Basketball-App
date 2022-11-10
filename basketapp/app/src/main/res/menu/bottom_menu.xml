@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="HOME" />
+    <item
+        android:id="@+id/matches"
+        android:icon="@drawable/ic_basketball"
+        android:title="MATCHES" />
+    <item
+        android:id="@+id/ranking"
+        android:icon="@drawable/ic_ranking_factor_svgrepo_com"
+        android:title="RANKING" />
+</menu>
